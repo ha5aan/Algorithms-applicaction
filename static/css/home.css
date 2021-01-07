@@ -1,0 +1,170 @@
+nav {
+    color: #fffafa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.header {
+    padding-top: 20px;
+    margin-block-start: 0px;
+    text-align: center;
+    background: #79a3b1;
+    color: #fffafa;
+    line-height: 25px;
+}
+
+form {
+    /*Adding shadow to form and setting up box size for form*/
+    border: 3px solid #f1f1f1;
+
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #eeeded;
+    border-radius: 10px;
+    
+    -webkit-box-shadow: 7px 7px 5px 0px #e2e4d9;
+    -moz-box-shadow: 7px 7px 5px 0px #e2e4d9;
+    box-shadow: 35px 7px 5px 5px #e2e4d9;
+}
+
+form:hover{
+    -webkit-box-shadow: 7px 7px 5px 0px #b5b6af;
+    -moz-box-shadow: 7px 7px 5px 0px #b5b6af;
+    box-shadow: 35px 7px 5px 5px #b5b6af;
+
+}
+
+
+
+.icon {
+    color: #456268;
+    min-width: 30px;
+    padding-top: 13px;
+}
+.spc {
+    padding-top: 5px;
+}
+
+
+.btn {
+    background-color: #79a3b1;
+    color: 456268;
+    padding: 14px 20px;
+    margin: 8px 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 30%;
+    -webkit-box-shadow: 7px 7px 5px 0px #d0e8f2;
+    -moz-box-shadow: 7px 7px 5px 0px #d0e8f2;
+    box-shadow: 7px 7px 5px 0px #d0e8f2;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+
+}
+
+
+.btn:hover {
+    opacity: 0.8;
+    background-color: #d0e8f2;
+
+    -webkit-box-shadow: 7px 7px 5px 0px #79a3b1;
+    -moz-box-shadow: 7px 7px 5px 0px #79a3b1;
+    box-shadow: 7px 7px 5px 0px #79a3b1;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link rel="stylesheet" href="../static/css/home.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="heading">Emergency Service Portal</h1>
+        <p class="tagline">At your service 24x7</p>
+
+        <div class="navbar">
+            <a href="/">HOME</a>
+            <a href="/Select_codes">Algorithms</a>
+
+        </div>
+
+    </div>
+
+    <div style="padding-bottom: 30px;">
+
+    </div>
+<center>
+<form  action="/select_code" method="POST">
+
+    <div class="container">
+
+        <center>
+            <h1 style="color: #456268; font-family:'Varela Round',sans-serif;">Select Algorithm</h1>
+        </center>
+       
+        <div class="spc">
+            <div class="input-container">
+                <i class="fa fa-edit" style="font-size:15px;"></i>
+               Select Algorithm <select>
+                <option name='Longest_Common_Subsequence'>Longest_Common_Subsequence</option>
+                <option>Shortest_Common_Supersequence</option>
+                <option>Levenshtein_Distance</option>
+                <option>Longest_Increasing_Subsequence</option>
+                <option>Matrix_Chain_Multiplication</option>
+                <option>0_1_knapsack_problem</option>
+                <option> Partition_problem</option>
+                <option>Rod_Cutting_Problem</option>
+                <option>Coin_change_making_problem</option>
+                <option>Word_Break_Problem</option>
+            </select></p>
+            </div>
+        </div>
+
+    
+        <button class="btn" type="button" onclick="return abc('name');">Select Algorithm</button>
+          
+        <!-- Longest Common Subsequence
+        b. Shortest Common Supersequence
+        c. Levenshtein Distance (edit-distance)
+        d. Longest Increasing Subsequence
+        e. Matrix Chain Multiplication (Order finding /paranthesization)
+        f. 0-1-knapsack-problem
+        g. Partition-problem
+        h. Rod Cutting Problem
+        i. Coin-change-making-problem
+        j. Word Break Problem
+       -->
+    
+     </form>
+    </center>
+    <script>
+        function abc(display_record){
+            window.location.href = "/"+ display_record
+        }
+    </script>
+    
+    <div class="header" style="position: fixed; left: 0;bottom: 0;width:100%; margin-top:20px; padding-top:0px; font-size:17px; font-family: 'Varela Round', sans-serif;">
+        <footer style="text-align: left;">&copy; Copyright 2020 <span style="color:#fbdcc4;font-size:18px; font-family: 'Varela Round', sans-serif;">EMERGENCY-SERVICES</span>
+            <span style="padding-left: 890px;">
+
+                <a href="#">
+                    <i style="color: #fbdcc4; font-size:20px;" class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i style="color: #fbdcc4; font-size:20px;" class="fa fa-linkedin"></i>
+                </a>
+
+                <a href="#">
+                    <i style="color: #fbdcc4; font-size:20px" class="fa fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i style="color: #fbdcc4; font-size:20px" class="fa fa-medium"></i>
+                </a>
+
+            </span>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
