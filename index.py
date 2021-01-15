@@ -285,6 +285,46 @@ def Word_break():
         return render_template('/Word_break.html')
 
 
+@app.route('/SCS/',methods = ['GET','POST'])
+
+def SCS_page():
+
+     length = None
+     if request.method == "POST":
+         filename = "shortest/"
+         filename = filename + "input"+ request.form.get("input")+".txt"
+         #print(filename)
+         f=open(filename,"r")
+     
+         if f.mode == 'r':
+              contents =f.readlines()
+              X = contents[0]
+              Y = contents[1]
+              a = len(X)
+              b = len(Y)
+              dp = [[0] * (b + 2) for i in range(a + 2)]
+              for i in range(a + 1):
+                 for j in range(b + 1):
+                     if (not i):
+                         dp[i][j] = j
+                     elif (not j):
+                         dp[i][j] = i
+                     elif (X[i - 1] == Y[j - 1]):
+                         dp[i][j] = 1 + dp[i - 1][j - 1]
+                     else:
+                         dp[i][j] = 1 + min(dp[i - 1][j],dp[i][j - 1])
+               
+              length = dp[a][b]
+              print(X,Y)
+         print("Length of the shortest supersequence is:",length )
+         return render_template('/shortest_result.html',length=length,firs=X, sec=Y)
+     else:
+         return render_template('/shortes_common.html')
+
+
+
+
+
 
 def lcs(X , Y, m , n): 
 	 

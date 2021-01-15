@@ -102,7 +102,7 @@ body {
     padding-top: 20px;
     margin-block-start: 0px;
     text-align: center;
-    background: #79a3b1;
+    background: #0f3057;
     color: #fffafa;
     line-height: 25px;
 }
@@ -131,7 +131,7 @@ form:hover{
 
 
 .icon {
-    color: #456268;
+    color: #0f3057;
     min-width: 30px;
     padding-top: 13px;
 }
@@ -141,7 +141,7 @@ form:hover{
 
 
 .btn {
-    background-color: #79a3b1;
+    background-color: #0f3057;
     color: 456268;
     padding: 14px 20px;
     margin: 8px 0;

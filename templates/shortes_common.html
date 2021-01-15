@@ -34,44 +34,45 @@
     </div>
 
     <div style="padding-bottom: 30px;">
-        <h2>What is knapsack Problem?</h2>
-    <p>The knapsack problem is a problem in combinatorial optimization: 
-        Given a set of items, each with a weight and a value, 
-        determine the number of each item to include in a collection 
-        so that the total weight is less than or equal to a given limit and 
-        the total value is as large as possible.</p>
-        <hr>
-        <h2>Time Complexity</h2>
-        <p>The dynamic programming algorithm for 
-            the knapsack problem has a time complexity of O(nW)
-             where n is the number of items and W is 
-             the capacity of the knapsack.</p>
-<hr>
-    
+
     </div>
 
-    <center>
+    <h2>What is Shortest common Supersequence Problem?</h2>
+    <p>In computer science, the shortest common supersequence of two sequences X and Y is 
+        the shortest sequence which has X and Y as subsequences. 
+        This is a problem closely related to the longest common subsequence problem.</p>
+        <h2>Time Complexity</h2>
+        <p>The Dynamice programming approach takes O(m*n) time. Where m, n are the length 
+            of the first and second string respectively..</p>
+<center>
+<form  action="/SCS/" method="POST">
 
     <div class="container">
 
         <center>
-            <h1 style="color: #456268; font-family:'Varela Round',sans-serif;">Result is as Follows</h1>
+            <h1 style="color: #456268; font-family:'Varela Round',sans-serif;">Select Input File</h1>
         </center>
        
         <div class="spc">
             <div class="input-container">
-                <p>maximum weight of knapsack is {{maxc}}</p>
-                <p>Maximum profit is {{res}}</p>
-                
-                <p>total products are {{items}}</p>
-                <p>weights of products are {{weights}}</p>
-                <p>Values of products are{{values}}</p>   
+                <i class="fa fa-edit" style="font-size:15px;"></i>
+               Select input File <select name='input'>
+                <option >1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select></p>
             </div>
-            
         </div>
 
     
-        <center> <a class="btn btn-primary" href="/" >Return to home</a></center>
+        <center><button type="submit" style="color:rgb(17, 9, 9)">Select</button></center>
           
         <!-- Longest Common Subsequence
         b. Shortest Common Supersequence
@@ -85,6 +86,7 @@
         j. Word Break Problem
        -->
     
+     </form>
     </center>
     <!-- <script>
         function abc(display_record){
